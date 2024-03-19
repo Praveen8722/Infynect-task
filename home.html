@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo App</h1>
+        <div id="task-list">
+            <!-- Task list will be populated dynamically -->
+        </div>
+        <div id="task-form">
+            <h2>Add Task</h2>
+            <input type="text" id="task-name" placeholder="Task Name">
+            <textarea id="description" placeholder="Description"></textarea>
+            <select id="priority">
+                <option value="highest">Highest</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <input type="date" id="start-date">
+            <input type="date" id="due-date">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
